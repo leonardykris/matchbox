@@ -1,0 +1,14 @@
+<template name="storage">
+<p>Well hello there, what do we have here</p>
+<button className="s-alert-trigger" onClick={this.sAlertWarning}>sAlert Warning</button>
+<button className="s-alert-trigger" onClick={this.sAlertSuccess}>sAlert Success</button>
+<button className="s-alert-trigger" onClick={this.sAlertError}>sAlert Error</button>
+<div className="container">
+  <header>
+    <h1>To Do List</h1>
+  </header>
+  <ul>
+    {this.renderTasks()}
+  </ul>
+</div>
+</template>
