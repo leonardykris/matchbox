@@ -1,14 +1,17 @@
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  color: white; }
 
 p {
   font-weight: lighter;
-}
+  color: #3f120d; }
 
 .next-button-fixed {
   position: absolute;
   bottom: 40px;
-  width: 100%; }
+  width: 100%;
+  padding: 0 50px;
+  text-align: center; }
 
 .btn-primary {
   background-color: #f6932c;
@@ -17,18 +20,46 @@ p {
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 1em;
-  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15); }
 
 .btn-primary:hover {
   background-color: #f58614;
   border: 1px solid #f58614; }
+
+.label {
+  padding: 10px;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.label-primary {
+  background-color: red; }
+
+.label-foodpairing {
+  background-color: #f6932c; }
+
+.shortdiv {
+  border-top: 1px solid yellow;
+  width: 30px;
+  margin: 0 auto; }
+
+.text-center {
+  text-align: center; }
+
+.block {
+  display: block !important; }
+
+.float-right {
+  float: right; }
 
 body {
   background-color: #f8c713; }
 
 .hero {
   width: 100%;
-  display: table; }
+  display: table;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .hero-text {
   display: table-cell;
@@ -40,8 +71,48 @@ body {
   width: 100%;
   max-width: 100%; }
 
+.player-bar {
+  text-align: center;
+  background-color: #eae3dd;
+  color: #3f120d; }
+
+.player {
+  display: inline-block;
+  margin: 10px 5px;
+  position: relative; }
+
+.player img {
+  max-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white; }
+
+.player span {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.6em; }
+
+.player.active img {
+  border: 2px solid #f6932c; }
+
+.player .score {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f2f5fa;
+  border: 1px solid #c3c3c3;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  color: #f6932c;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+
 .beers {
-  width: 100%;}
+  width: 100%; }
 
 .beers .hero {
   height: 40vh; }
@@ -78,6 +149,9 @@ body {
   max-height: 100%;
   margin-bottom: 5px; }
 
+.waiting-room .container {
+  padding: 0 30px; }
+
 .waiting-room .hero-text {
   color: #3f120d; }
 
@@ -88,13 +162,14 @@ body {
 
 .waiting-room-players {
   display: block;
-  margin-top: 100px;
+  margin-top: 160px;
+  margin-bottom: 30px;
   position: relative; }
   .waiting-room-players .main-player {
     text-align: center; }
   .waiting-room-players .main-player img {
-    max-width: 120px;
-    height: 120px;
+    max-width: 90px;
+    height: 90px;
     border-radius: 50%;
     border: 3px solid white; }
   .waiting-room-players .main-player span {
@@ -105,15 +180,294 @@ body {
     font-size: 0.75em;
     text-align: center; }
   .waiting-room-players .player {
-    position: absolute; }
+    position: absolute;
+    text-align: center; }
   .waiting-room-players .player img {
-    max-width: 60px;
-    height: 60px;
+    max-width: 50px;
+    height: 50px;
     border-radius: 50%;
-    border: 3px solid white; }
+    border: 2px solid white; }
   .waiting-room-players .player span {
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 0.75em; }
+    font-size: 0.6em; }
+
+.waiting-room-players .player-one {
+  left: 5%;
+  bottom: 40px; }
+
+.waiting-room-players .player-two {
+  left: 15%;
+  bottom: 115px; }
+
+.waiting-room-players .player-three {
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  bottom: 140px; }
+
+.waiting-room-players .player-four {
+  right: 15%;
+  bottom: 115px; }
+
+.waiting-room-players .player-five {
+  right: 5%;
+  bottom: 40px; }
+
+.howto {
+  background-color: #f6932c; }
+
+.howto .container {
+  padding: 30px; }
+
+.howto ol {
+  padding-left: 15px;
+  font-size: 1em;
+  margin-bottom: 20px; }
+
+.howto ol li {
+  margin-bottom: 15px;
+  padding-left: 5px; }
+
+.howto p {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  color: yellow;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+.game .the-word {
+  padding: 0 40px; }
+
+.game .hero-text h1 {
+  color: #3f120d;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-size: 2em; }
+
+.game .hero-text h2 {
+  font-size: 1.25em;
+  color: #3f120d;
+  margin-top: 0; }
+
+.game .fillers {
+  border-bottom: 1px solid #3f120d;
+  display: inline-block;
+  min-width: 100px;
+  min-height: 1px; }
+
+.game .fillers + .fillers {
+  margin-left: 1em;
+  margin-right: 0.5em; }
+
+.game h4 {
+  font-size: 1.25em;
+  color: #3f120d;
+  margin-bottom: 30px; }
+
+.game p {
+  line-height: 3.5; }
+
+.game .timer {
+  background-color: red;
+  position: absolute;
+  bottom: 120px;
+  right: 0;
+  padding: 10px;
+  border-radius: 4px 0 0 4px; }
+
+.judger {
+  background-color: #823104;
+  color: white; }
+  .judger .hero .hero-text h1 {
+    color: white; }
+  .judger .the-word h4 {
+    color: #f8c713; }
+  .judger .fillers {
+    border-bottom: 1px solid white; }
+
+.judger input[type='radio'] {
+  margin-right: 15px; }
+
+.judger .input-group {
+  margin-bottom: 20px;
+  position: relative; }
+
+.score-notification {
+  background-color: yellow;
+  color: #3f120d;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 25px;
+  border-radius: 50%; }
+
+.score-notification.play-score-outro {
+  animation: 1s ease-out score-outro; }
+
+@keyframes score-outro {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.2em;
+    top: -30px;
+    right: -30px; } }
+
+.game-over .container {
+  padding: 0 40px; }
+
+.game-over p {
+  line-height: 1; }
+
+.game-over .hero-text h1 {
+  line-height: 1; }
+
+.game-over .selected {
+  background-color: #eae3dd; }
+  .game-over .selected .player-summary {
+    border-bottom: 0; }
+
+.game-over .player-summary-outer {
+  display: table; }
+
+.game-over .player-summary {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dfae12;
+  display: table-cell;
+  vertical-align: middle; }
+
+.game-over .player-summary img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: 15px; }
+
+.game-over .player-summary h5 {
+  display: inline;
+  font-weight: bold;
+  color: #3f120d;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+.game-over .player-summary .scoring {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  color: #3f120d;
+  font-weight: bold;
+  font-size: 1.25em; }
+
+.game-over .player-summary span.label {
+  display: inline-block;
+  margin-left: 15px;
+  min-width: 50px;
+  font-size: 0.7em; }
+
+.game-over .scoring-footer {
+  margin-top: 15px;
+  margin-bottom: 30px; }
+
+.game-over .scoring-footer p {
+  line-height: 1.5;
+  text-align: center; }
+
+.game-over .scoring-footer-inputs {
+  margin-bottom: 30px; }
+  .game-over .scoring-footer-inputs input {
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0; }
+
+.selected-beer {
+  background-color: #eae3dd;
+  min-height: 100vh;
+  background-image: url("../assets/beers/bg_budweiser.png");
+  background-repeat: no-repeat;
+  background-position: left -75px bottom; }
+
+.selected-beer .hero {
+  margin-bottom: 50px; }
+
+.selected-beer .beer-info {
+  text-align: center; }
+
+.selected-beer h4 {
+  color: #f6932c;
+  display: inline-block;
+  padding: 5px 0;
+  border-top: 1px solid #f6932c;
+  border-bottom: 1px solid #f6932c;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.selected-beer .flavour {
+  margin-bottom: 20px;
+  line-height: 3; }
+
+.selected-beer .pairings ul {
+  margin-top: 10px; }
+
+.selected-beer .pairings li {
+  margin-bottom: 10px; }
+
+.selected-beer .pairings {
+  color: #3f120d; }
+
+.selected-beer button {
+  margin-top: 30px; }
+
+.choose-age {
+  color: #3f120d; }
+  .choose-age .hero-text h3, .choose-age .hero-text span {
+    color: #3f120d; }
+  .choose-age .hero-text h3 {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600; }
+  .choose-age .age-input-outer {
+    margin-top: 30px; }
+  .choose-age .age-input {
+    margin: 15px 0px;
+    text-align: center; }
+    .choose-age .age-input input {
+      background-color: #f6932c;
+      box-shadow: none;
+      border: 0;
+      display: inline-block;
+      color: #3f120d;
+      margin: 0 5px; }
+    .choose-age .age-input input.day {
+      width: 25%; }
+    .choose-age .age-input input.month {
+      width: 25%; }
+    .choose-age .age-input input.year {
+      width: 30%; }
+  .choose-age .legal {
+    font-weight: lighter;
+    font-size: 0.9em;
+    margin-bottom: 20px; }
+  .choose-age .next-button-fixed span {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    margin-top: 10px;
+    display: block; }
