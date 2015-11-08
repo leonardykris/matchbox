@@ -563,6 +563,9 @@ Judge = React.createClass({
 });
 
 GameEnd = React.createClass({
+  sendMessage: function() {
+    Meteor.call('sendMessage');
+  },
   render() {
     return (
       <div>
@@ -633,7 +636,7 @@ GameEnd = React.createClass({
                   </div>
                 </div>
                 <Link to="/selection">
-                  <button className="btn btn-primary btn-block btn-lg">Start another game</button>
+                  <button className="btn btn-primary btn-block btn-lg" onClick={this.sendMessage}>Start another game</button>
                 </Link>
               </div>
             </div>

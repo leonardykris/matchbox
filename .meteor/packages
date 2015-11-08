@@ -32,3 +32,8 @@ underscore
 reactrouter:react-router
 fortawesome:fontawesome
 flyandi:reactive-countdown
+meteorhacks:npm
+
+
+npm-container
+abhiaiyer:meteor-twilio
