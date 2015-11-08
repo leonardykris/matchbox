@@ -1,4 +1,4 @@
 App.launchScreens({
   // iOS
-  'iphone6': '../assets/splash.jpg'
+  'iphone6': 'public/assets/splash.jpg'
 });

@@ -3,9 +3,9 @@ Meteor.methods({
     var twilio = Meteor.npmRequire('twilio')('AC61ca73151a4ad2b0e4c7255e828ce201', 'a8dd63a900b6ad6bd5e2b60f117993b1');
 
     twilio.sendMessage({
-      to:'+6594858097', // Any number Twilio can deliver to
+      to:'+6590628802', // Any number Twilio can deliver to
       from: '+15594683055', // A number you bought from Twilio and can use for outbound communication
-      body: 'word to your mother.' // body of the SMS message
+      body: 'Welcome to Matchbox and a world of unlimited pairing possibilities! Play again and invite more friends to earn exclusive discounts and rewards.' // body of the SMS message
     }, function(err, responseData) { //this function is executed when a response is received from Twilio
       if (!err) { // "err" is an error received during the request, if any
         // "responseData" is a JavaScript object containing data received from Twilio.

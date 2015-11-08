@@ -377,7 +377,7 @@ Label = React.createClass({
   setWord: function() {
     // console.log(this.props.params.name);
     // Session.set("firstWord", this.props.params.name);
-    if (Session.equals("firstWord", undefined)) {
+    if (Session.equals("firstWord", "") || Session.equals("firstWord", undefined)) {
       Session.set("firstWord", this.props.params.name);
     } else {
       Session.set("secondWord", this.props.params.name);
@@ -565,6 +565,8 @@ Judge = React.createClass({
 GameEnd = React.createClass({
   sendMessage: function() {
     Meteor.call('sendMessage');
+    Session.set('firstWord', "");
+    Session.set('secondWord', "");
   },
   render() {
     return (
