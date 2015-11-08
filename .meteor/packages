@@ -30,3 +30,5 @@ anti:fake
 zimme:active-route
 underscore
 reactrouter:react-router
+fortawesome:fontawesome
+flyandi:reactive-countdown
